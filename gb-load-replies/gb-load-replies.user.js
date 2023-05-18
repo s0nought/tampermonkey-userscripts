@@ -11,7 +11,7 @@
 // @updateURL https://raw.githubusercontent.com/s0nought/tampermonkey-userscripts/main/gb-load-replies/gb-load-replies.user.js
 // @downloadURL https://raw.githubusercontent.com/s0nought/tampermonkey-userscripts/main/gb-load-replies/gb-load-replies.user.js
 // @supportURL https://raw.githubusercontent.com/s0nought/tampermonkey-userscripts/main/gb-load-replies/gb-load-replies.user.js
-// @homepage https://github.com/s0nought/tampermonkey-userscripts/gb-load-replies
+// @homepage https://github.com/s0nought/tampermonkey-userscripts/tree/main/gb-load-replies
 // @author s0nought, YellowJello
 // @copyright CC0 1.0 Universal
 // ==/UserScript==
