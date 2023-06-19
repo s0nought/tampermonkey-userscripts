@@ -2,7 +2,7 @@
 // @name GameBanana block games
 // @match https://gamebanana.com/
 // @description Hide mods for the games you have blocked (see BLOCKED_GAMES) on the homepage.
-// @version 1.1
+// @version 1.2
 // @icon https://raw.githubusercontent.com/s0nought/tampermonkey-userscripts/main/gb-block-games/icon.png
 // @icon64 https://raw.githubusercontent.com/s0nought/tampermonkey-userscripts/main/gb-block-games/icon64.png
 // @namespace s0nought/tampermonkey-userscripts
@@ -33,7 +33,7 @@
 
     let BLOCKED_GAMES_MAP = new Map();
 
-    for (item of BLOCKED_GAMES) {
+    for (const item of BLOCKED_GAMES) {
         BLOCKED_GAMES_MAP.set(item, "");
     }
 
