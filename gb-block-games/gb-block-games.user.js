@@ -2,7 +2,7 @@
 // @name GameBanana block games
 // @match https://gamebanana.com/
 // @description Hide mods for the games you have blocked (see BLOCKED_GAMES) on the homepage.
-// @version 1.0
+// @version 1.1
 // @icon https://raw.githubusercontent.com/s0nought/tampermonkey-userscripts/main/gb-block-games/icon.png
 // @icon64 https://raw.githubusercontent.com/s0nought/tampermonkey-userscripts/main/gb-block-games/icon64.png
 // @namespace s0nought/tampermonkey-userscripts
@@ -38,9 +38,13 @@
     }
 
     function hideMod(node) {
-        const gameTitle = node.querySelector("img.GameIcon").alt.replace(" icon", "");
+        const gameTitle = node.querySelector("img.GameIcon");
 
-        if (BLOCKED_GAMES_MAP.has(gameTitle)) {
+        if (gameTitle === null) {
+            return;
+        }
+
+        if (BLOCKED_GAMES_MAP.has(gameTitle.alt.replace(" icon", ""))) {
             node.style.display = "none";
         }
     }
